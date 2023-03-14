@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CaaS.Core.Dal.Domain\CaaS.Core.Dal.Domain.csproj" />
+    <ProjectReference Include="..\CaaS.Core.Dal.Interface\CaaS.Core.Dal.Interface.csproj" />
+    <ProjectReference Include="..\Dal.Common\Dal.Common.csproj" />
+  </ItemGroup>
+
+</Project>

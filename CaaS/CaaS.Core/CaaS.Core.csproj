@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CaaS.Core.Logic.Discount\CaaS.Core.Logic.Discount.csproj" />
+	  <ProjectReference Include="..\CaaS.Core.Dal.Ado\CaaS.Core.Dal.Ado.csproj" />
+	  <ProjectReference Include="..\CaaS.Core.Dal.Domain\CaaS.Core.Dal.Domain.csproj" />
+	  <ProjectReference Include="..\CaaS.Core.Logic.OrderProcess\CaaS.Core.Logic.OrderProcessing.csproj" />
+	  <ProjectReference Include="..\CaaS.Core.Logic.Statistics\CaaS.Core.Logic.Statistics.csproj" />
+	  <ProjectReference Include="..\Dal.Common\Dal.Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Testdata\Carts.csv">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Testdata\Customers.csv">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Testdata\Products.csv">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+
+</Project>

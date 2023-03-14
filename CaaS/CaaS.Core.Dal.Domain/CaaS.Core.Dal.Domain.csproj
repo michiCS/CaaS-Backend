@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Discounts\**" />
+    <Compile Remove="Experimential\**" />
+    <EmbeddedResource Remove="Discounts\**" />
+    <EmbeddedResource Remove="Experimential\**" />
+    <None Remove="Discounts\**" />
+    <None Remove="Experimential\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dal.Common\Dal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
